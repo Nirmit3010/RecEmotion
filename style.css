@@ -1,0 +1,47 @@
+body
+{
+  color: white;
+  background: rgb(25,14,245);
+background: radial-gradient(circle, rgba(25,14,245,1) 0%, rgba(14,11,209,1) 25%, rgba(14,30,194,1) 50%, rgba(15,15,170,1) 75%, rgba(26,19,143,1) 100%);
+}
+p {
+  font-family: 'Stint Ultra Condensed';
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Abel';
+  font-size: 35px;
+}
+b {
+  font-family: 'Crimson Text';
+  font-size: 30px;
+  
+}
+label {
+  font-family: 'Abel';
+  font-size: 25px;
+}
+span
+{
+  font-size: 30px;
+  color: rgb(232, 252, 145);
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}

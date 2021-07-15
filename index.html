@@ -1,0 +1,73 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed|Crimson+Text|Abel&display=swap"
+		rel="stylesheet">
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3>HOW DO YOU FEEL?</h3>
+<div class="btn btn-primary heading">
+<br>
+<span>&#128513</span>
+<span>&#128544</span>
+<span>&#128567</span>
+<span>&#128580</span>
+</div>
+      <br><br>
+
+      <p>Take your selfie to generate emoji
+      	<br>
+        <span>Are you Grinning? |</span>
+        <span>Are you Angry? |</span>
+        <span>Are you Wearing a mask? |</span>
+        <span>Are you Uninterested? |</span>
+
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam view- </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-primary">Capture Image</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Estimate 1- </label>
+        <p class="emotion_name" id="result_emotion_name"></p>
+        <p class="emoji" id="update_emoji"></p>
+        <br><br>
+        <label>Estimate 2- </label>
+        <p class="emotion_name" id="result_emotion_name2"></p>
+        <p class="emoji" id="update_emoji2"></p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot- </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-info">Estimate Emotion</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
